@@ -32,6 +32,10 @@ function getAdvancement(completedList, availableList) {
             console.log("Impossible!");
             requirements = checkObject.alt;
         }
+        if(checkObject.name == "Is It a Plane?" && completedList.includes("kill_dragon")){
+            console.log("Impossible!");
+            requirements = checkObject.alt;
+        }
         for (j = 0; j < requirements.length; j++) {
             let requirement = requirements[j];
             if (Array.isArray(requirement)) {
